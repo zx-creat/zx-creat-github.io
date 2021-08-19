@@ -1,0 +1,550 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" >
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/1.jpg">
+  <link rel="icon" href="/img/1.jpg">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="普普通通用来记录我和她的故事">
+  <meta name="author" content="木习习">
+  <meta name="keywords" content="">
+  
+  <title>学习python第一天 - 我的女孩</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+  
+<link rel="stylesheet" href="/css/gundongtiao.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/bynotes/texiao/source/css/gundongtiao.css">
+<link rel="stylesheet" href="/css/shubiao.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/bynotes/texiao/source/css/shubiao.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.9-a","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>一段从学生时代开始的曲折的爱情</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="学习python第一天">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-08-19 16:25" pubdate>
+        2021年8月19日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.7k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      21
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">学习python第一天</h1>
+            
+            <div class="markdown-body">
+              <script src="\assets\js\APlayer.min.js"> </script><h1 id="Python学习记录"><a href="#Python学习记录" class="headerlink" title="Python学习记录"></a>Python学习记录</h1><h2 id="Day1："><a href="#Day1：" class="headerlink" title="Day1："></a>Day1：</h2><h3 id="解释器"><a href="#解释器" class="headerlink" title="解释器"></a>解释器</h3><p>如果使用py3（默认编码格式是Unicode，如果不指定编码格式也可以处理中文信息）：首行必须采用固定格式 #!/usr/bin/python3</p>
+<p>如果使用py2(默认编码格式是ASCll，如果不指定编码格式就无法处理中文信息）：代码中如有中文  在代码首行后必须（一般在#!/usr/bin/python3后）添加 #coding:utf-8</p>
+<h3 id="人生第一个py3代码"><a href="#人生第一个py3代码" class="headerlink" title="人生第一个py3代码"></a>人生第一个py3代码</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">#!/usr/bin/python3</span><br><span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;Hello world!&#x27;</span>)<br></code></pre></td></tr></table></figure>
+
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><p>py区分大小写，比如布尔值True和False。T，F写成小写就会报错。</p>
+<h3 id="注释符号"><a href="#注释符号" class="headerlink" title="注释符号"></a>注释符号</h3><p>单行注释 #</p>
+<p>多行注释 三个连续的 “ 或者 ‘</p>
+<h3 id="变量定义"><a href="#变量定义" class="headerlink" title="变量定义"></a>变量定义</h3><h4 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h4><p>无需声明变量<br> py真的灵活，以下定义都是正确的<br>①：a=1 ②：a = 1 ③：a,b = 2,3 ④：a = b = 3<br>需要注意的是变量和值需要对应！拒绝a,b = 3的格式，变量与数值个数必须相等。</p>
+<h4 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h4><p>文本型数据必须要有 ‘hi’或者”hi”或者’’’hi’’’或者”””hi”””这些引号将其引起来。<br>①：数值型。②：字符型。③：布尔型：0、None、空字符串（’ ‘)，空列表([])，空元组，均被看成False。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python">一：<br><span class="hljs-keyword">if</span> <span class="hljs-string">&#x27;a&#x27;</span>:<br> <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;yes!&#x27;</span>) <span class="hljs-comment">#执行代码会输出yes！</span><br>二：<br><span class="hljs-keyword">if</span> <span class="hljs-string">&#x27;&#x27;</span>:<br> <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;yes!&#x27;</span>) <span class="hljs-comment">#执行代码不会输出yes！</span><br></code></pre></td></tr></table></figure>
+
+<p>注意 py语言为强类型语言 这里学过c语言就可以理解。略过。</p>
+<h4 id="变量名"><a href="#变量名" class="headerlink" title="变量名"></a>变量名</h4><p>不要脑袋不好使 去使用一些py中的一些关键字<br>可以在kail下的py3执行下 keywords查看一下关键字。</p>
+<h4 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h4><p>c语言基础跳过部分<br>// 整除，返回商整数部分  34//10=3<br>% 取模，除法运算求余数 34%10=4<br>** 乘方 2**3=8<br>|= 不等于<br>py可以链式比较大小 如果是文本型的就根据其ASCIl大小比较。’Hello’&lt;’World’,其比较分别对应比较第一个字母，一旦比出大小就结束，字母若是一样就依次往后比较。<br>字符串时：“+”：表示连接。 *表示：字符串重复n次。</p>
+<h4 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h4><p>c语言基础跳过全部。</p>
+<h4 id="成员运算符"><a href="#成员运算符" class="headerlink" title="成员运算符"></a>成员运算符</h4><p>①：in</p>
+<p>②：not in</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python">a = <span class="hljs-string">&#x27;abc123,&#x27;</span><br><span class="hljs-string">&#x27;b&#x27;</span> <span class="hljs-keyword">in</span> a <span class="hljs-comment">#回显True</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="输入输出函数"><a href="#输入输出函数" class="headerlink" title="输入输出函数"></a>输入输出函数</h3><h5 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h5><p>c语言基础跳过部分。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python">name = <span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;请输入姓名：&quot;</span>) <span class="hljs-comment">#如果输入的姓名为admin，name = &#x27;admin&#x27;</span><br>a = <span class="hljs-built_in">input</span>() <span class="hljs-comment">#如果输入123，a = &#x27;123&#x27;</span><br></code></pre></td></tr></table></figure>
+
+<p>有上述可知 input 类型默认为字符型。后续如果需要转换。可根据c语言解决。也可以使用这样的方法。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">a = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>()) <span class="hljs-comment">#如果输入123，a = 123</span><br></code></pre></td></tr></table></figure>
+
+<p>实现一次多数据输入 但是此方法结果为字符型</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python">a,b = <span class="hljs-built_in">input</span>().split() <span class="hljs-comment">#输入 2 3，a = &#x27;2&#x27; b = &#x27;3&#x27;</span><br><span class="hljs-string">&#x27;a b c&#x27;</span>.split() <span class="hljs-comment">#得到[&#x27;a&#x27;,&#x27;b&#x27;,&#x27;c&#x27;]</span><br></code></pre></td></tr></table></figure>
+
+<p>如果还是想要输出结果为数值型可这样做 </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">a,b = <span class="hljs-built_in">map</span>(<span class="hljs-built_in">int</span>,<span class="hljs-built_in">input</span>().split()) <span class="hljs-comment">#输入 2 3，a = 2 b = 3</span><br></code></pre></td></tr></table></figure>
+
+<p>该代码理解：map功能是让input().split()所接收的数据依次做int处理。</p>
+<h5 id="print"><a href="#print" class="headerlink" title="print"></a>print</h5><h6 id="sep"><a href="#sep" class="headerlink" title="sep"></a>sep</h6><p>输出类型任意  输出中间间隔默认为 ‘  ’</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-built_in">print</span>(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,sep=<span class="hljs-string">&#x27;/&#x27;</span>) <span class="hljs-comment"># 输出为1/2/3</span><br></code></pre></td></tr></table></figure>
+
+<h6 id="end"><a href="#end" class="headerlink" title="end"></a>end</h6><p>输出完毕后以指定字符结束，同上方法使用。</p>
+<h3 id="if语句"><a href="#if语句" class="headerlink" title="if语句"></a>if语句</h3><p>每个条件后面要使用冒号“：”，表示满足条件后需要执行的语句块。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">if</span> 表达式<span class="hljs-number">1</span>:<br> 语句块<span class="hljs-number">1</span><br><span class="hljs-keyword">elif</span> 表达式<span class="hljs-number">2</span>:<br> 语句块<span class="hljs-number">2</span><br>...<br><span class="hljs-keyword">else</span>:<br> 语句块n<br></code></pre></td></tr></table></figure>
+
+<p>py语法要求缩进统一。语句块部分的代码要求必须缩进，而且缩进方式必须统一。缩进方式用空格和tab都可以。<br>py中没有switch…..case语句。(c语言也没学懂……忘了)</p>
+<h4 id="if语句条件表达式"><a href="#if语句条件表达式" class="headerlink" title="if语句条件表达式"></a>if语句条件表达式</h4><p>数据类型提到过</p>
+<p>①：数值型。②：字符型。③：布尔型：0、None、空字符串（’ ‘)，空列表([])，空元组，均被看成False。、</p>
+<p>其他均为True。</p>
+<h4 id="三元表达式"><a href="#三元表达式" class="headerlink" title="三元表达式"></a>三元表达式</h4><p>没必要学！了解下吧。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python">a = <span class="hljs-string">&#x27;root&#x27;</span><br><span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;Hello root&#x27;</span>) <span class="hljs-keyword">if</span> a == <span class="hljs-string">&#x27;root&#x27;</span> <span class="hljs-keyword">else</span> <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;You are bb&#x27;</span>)<br><span class="hljs-comment">#如果a == &#x27;root&#x27;输出为Hello root反之输出 You are bb</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="for循环语句"><a href="#for循环语句" class="headerlink" title="for循环语句"></a>for循环语句</h3><p>循环次数确定 又跟c语言差不多…..<br>注意：for语句后面必须要有冒号“:”,循环体中的语句要注意缩进。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">for</span> 变量 <span class="hljs-keyword">in</span> 序列或可迭代对象:<br>	循环体（语句块）<br>	<br>b = <span class="hljs-number">0</span><br><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>,<span class="hljs-number">101</span>):<br>	b = b + i<br><span class="hljs-built_in">print</span>(b) <span class="hljs-comment">#输出结果为5050</span><br>	<br></code></pre></td></tr></table></figure>
+
+<p>range函数:py2可以实现 range(1,10)为123456789    py3直接输出则为 range(1,10)。<br>如果range(10),则会输出0123456789。<br>如果range(1,10,2)则会输出13579，每隔两个数输出。</p>
+<h3 id="for循环嵌套"><a href="#for循环嵌套" class="headerlink" title="for循环嵌套"></a>for循环嵌套</h3><p><strong>九九乘法表</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">#!/usr/bin/python3</span><br><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>,<span class="hljs-number">10</span>): <span class="hljs-comment">#外循环共循环九次</span><br>	<span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>,i+<span class="hljs-number">1</span>): <span class="hljs-comment">#内循环控制每行输出的个数</span><br>		<span class="hljs-built_in">print</span>(<span class="hljs-built_in">str</span>(j) + <span class="hljs-string">&quot;*&quot;</span> + <span class="hljs-built_in">str</span>(i) + <span class="hljs-string">&quot;=&quot;</span> + <span class="hljs-built_in">str</span>(i*j),end=<span class="hljs-string">&#x27; &#x27;</span>)<br>		<span class="hljs-comment">#把数值型转换成字符型然后进行输出</span><br><span class="hljs-built_in">print</span>() <span class="hljs-comment">#换行</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h3><p>循环次数难以确定</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">while</span> 循环条件:<br>	循环体(语句块)<br>	<br><br>a = i = <span class="hljs-number">0</span><br><span class="hljs-keyword">while</span> i&lt;=<span class="hljs-number">100</span>:<br>	a = a + i<br>	i = i + <span class="hljs-number">1</span><br><span class="hljs-built_in">print</span>(a) <span class="hljs-comment">#输出结果为5050</span><br></code></pre></td></tr></table></figure>
+
+<p>break，continue用法跟c语言一样 跳过。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:<br>	a,b = <span class="hljs-built_in">map</span>(<span class="hljs-built_in">int</span>,<span class="hljs-built_in">input</span>().split())<br>	<span class="hljs-keyword">if</span> a&gt;<span class="hljs-number">100</span> <span class="hljs-keyword">or</span> b&gt;<span class="hljs-number">100</span>:<br>		<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;a,b只能是100以内的数&quot;</span>)<br>		<span class="hljs-keyword">continue</span> <span class="hljs-comment">#直接跳出本次的while循环</span><br>	c = a + b<br>	<span class="hljs-built_in">print</span>(c)<br>	q = <span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;退出请输入q&quot;</span>)<br>	<span class="hljs-keyword">if</span> q=<span class="hljs-string">&#x27;q&#x27;</span>:<br>		<span class="hljs-keyword">break</span> <span class="hljs-comment">#结束本次while操作</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="学到这里我就可以尝试下做一个登入密码的代码了"><a href="#学到这里我就可以尝试下做一个登入密码的代码了" class="headerlink" title="学到这里我就可以尝试下做一个登入密码的代码了"></a>学到这里我就可以尝试下做一个登入密码的代码了</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">#!/usr/bin/python3</span><br><span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:<br>	a = <span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;请输入用户名&quot;</span>)<br>	b = <span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;请输入密码&quot;</span>)<br>	<span class="hljs-keyword">if</span> a = <span class="hljs-string">&#x27;admin&#x27;</span> <span class="hljs-keyword">and</span> b = <span class="hljs-string">&#x27;123&#x27;</span>:<br>	<span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;登入成功！&#x27;</span>)<br>	<span class="hljs-keyword">break</span><br>	<span class="hljs-keyword">else</span>:<br>	<span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;登入失败！&#x27;</span>)<br></code></pre></td></tr></table></figure>
+
+<p><strong>上述好像只能无限次登入直到成功</strong></p>
+<p><strong>于是改进下</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">#!/usr/bin/python3</span><br>i=<span class="hljs-number">0</span><br><span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:<br>	<span class="hljs-keyword">if</span> i=<span class="hljs-number">3</span>:<br>	<span class="hljs-keyword">break</span><br>	a = <span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;请输入用户名&quot;</span>)<br>	b = <span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;请输入密码&quot;</span>)<br>	<span class="hljs-keyword">if</span> a = <span class="hljs-string">&#x27;admin&#x27;</span> <span class="hljs-keyword">and</span> b = <span class="hljs-string">&#x27;123&#x27;</span>:<br>	<span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;登入成功！&#x27;</span>)<br>	<span class="hljs-keyword">break</span><br>	<span class="hljs-keyword">else</span>:<br>	<span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;登入失败！&#x27;</span>)<br>	i = i + <span class="hljs-number">1</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="水仙花数"><a href="#水仙花数" class="headerlink" title="水仙花数"></a>水仙花数</h3><p>跟c语言一个思路 想了想比较简单 就不写下来代码了 主要是利用  // 和%</p>
+<p>so easy!!! 但是想了想py会好简单 c语言那时候写起来感觉还繁琐的很，不行还是写一下！</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">#!/usr/bin/python3</span><br><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>,<span class="hljs-number">1000</span>)<br>	bai = i //<span class="hljs-number">100</span><br>	shi = i // <span class="hljs-number">100</span> % <span class="hljs-number">10</span><br>	ge = i % <span class="hljs-number">10</span><br>	<span class="hljs-keyword">if</span> i == bai**<span class="hljs-number">3</span> + shi**<span class="hljs-number">3</span> + ge**<span class="hljs-number">3</span><br><span class="hljs-built_in">print</span>(i)<br></code></pre></td></tr></table></figure>
+
+<p>真的越看越简单！！！！</p>
+<h3 id="跟c语言一样再试试1-1-2-1-3…-1-n"><a href="#跟c语言一样再试试1-1-2-1-3…-1-n" class="headerlink" title="跟c语言一样再试试1+1/2+1/3….1/n"></a>跟c语言一样再试试1+1/2+1/3….1/n</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">#!usr/bin/python3</span><br>n = <span class="hljs-number">1</span><br><span class="hljs-built_in">sum</span> = <span class="hljs-number">0</span><br><span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:<br>	i = <span class="hljs-number">1</span>/n<br>	n = n+<span class="hljs-number">1</span><br>	<span class="hljs-built_in">sum</span> = <span class="hljs-built_in">sum</span> + i	<br></code></pre></td></tr></table></figure>
+
+<p>这是一个无穷无尽的函数 如果需要增加条件 也特别简单 不想写了</p>
+<p>第一天就学到这里吧 明天开始就可以接触一些关于ctf的解题python了！</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/08/13/%E6%81%8B%E7%88%B1%E8%A7%82/">
+                        <span class="hidden-mobile">现在的恋爱经历与恋爱观</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.lazyComments('valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "uTalFF7Oy53UA0JthlWjdcBk-gzGzoHsz",
+          app_key: "MEtvGQ9JFXdCUbVCnd7NNka0",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "https://utalff7o.lc-cn-n1-shared.com",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <span>张栩</span></a> <i class="iconfont icon-love"></i> <span>沈阳竹</span></a> 
+    <!--《添加网站运行时间 -->
+<br/>
+
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+var now = new Date(); 
+
+function createtime() {
+    //此处修改你的建站时间或者网站上线时间
+    var grt = new Date('09/09/2020 0:00:00');
+    now.setTime(now.getTime() + 250);
+    days = (now - grt) / 1000 / 60 / 60 / 24;
+
+    dnum = Math.floor(days);
+    hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum);
+    hnum = Math.floor(hours);
+    if (String(hnum).length == 1) {
+        hnum = "0" + hnum;
+    }
+    minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+    mnum = Math.floor(minutes);
+    if (String(mnum).length == 1) {
+        mnum = "0" + mnum;
+    }
+    seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+    snum = Math.round(seconds);
+    if (String(snum).length == 1) {
+        snum = "0" + snum;
+    }
+    document.getElementById("timeDate").innerHTML = " 故事已经持续 " + dnum + " 天 ";
+    document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+}
+setInterval("createtime()", 250);
+</script>
+
+<!-- 添加网站运行时间》-->
+  </div>
+  
+
+  
+
+  
+  下次见面好好抱抱我
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+  
+<script src="/js/caidai.js"></script>
+<script src="//cdn.jsdelivr.net/gh/bynotes/texiao/source/js/caidai.js"></script>
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+<!-- hexo injector body_end start -->
+  <div id="aplayer"></div>
+  <link defer rel="stylesheet" href="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css" />
+  <script src="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js"></script>
+<script>
+  !(function() {
+  var oldLoadAp = window.onload;
+  window.onload = function () {
+    oldLoadAp && oldLoadAp();
+
+    new APlayer({
+      container: document.getElementById('aplayer'),
+      fixed: 'true',
+      autoplay: 'true',
+      loop: 'all',
+      order: 'list',
+      theme: '#b7daff',
+      preload: 'none',
+      audio: [
+        {
+          name: '星空剪影',
+          artist: '蓝心羽',
+          url: '/songs/蓝心羽 - 星空剪影.flac',
+          cover: '/img/cover.jpg'
+        },
+{
+          name: '遇见你的时候所有星星都落到我头上',
+          artist: '高姗',
+          url: '/songs/高姗 - 遇见你的时候所有星星都落到我头上.flac',
+          cover: '/img/cover.jpg'
+}
+
+      ]
+    });
+  }
+})();
+</script>
+<!-- hexo injector body_end end --></body>
+</html>
