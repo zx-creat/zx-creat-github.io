@@ -146,7 +146,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.3k 字
+      1.4k 字
     </span>
   
 
@@ -156,7 +156,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      17
+      18
        分钟
     </span>
   
@@ -254,7 +254,7 @@
 <h3 id="Robots协议"><a href="#Robots协议" class="headerlink" title="Robots协议"></a>Robots协议</h3><p>就是爬虫的一些限制。</p>
 <h3 id="爬取网页通用代码框架"><a href="#爬取网页通用代码框架" class="headerlink" title="爬取网页通用代码框架"></a>爬取网页通用代码框架</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">try</span>:<br>	r = requests.get(url, headers = headers，timeout=<span class="hljs-number">30</span>)<br>        r.raise_for_status()  <span class="hljs-comment"># 如果不是200，产生异常requests.HTTPError</span><br>        r.encoding = r.apparent_encoding<br>        <span class="hljs-keyword">return</span> r.text<br>    <span class="hljs-keyword">except</span>:<br>        <span class="hljs-keyword">return</span> <span class="hljs-string">&#x27;产生异常&#x27;</span><br></code></pre></td></tr></table></figure>
 
-<p>然后又下载了下 <strong>pycharm</strong>，救了大命，根本不适合我用，纯英文…..可能明天再去b站看一下使用pycharm的详细使用教程<br><strong>flag：</strong>好好学英语<br>希望我暑假结束可以把这个弄懂吧…。姑且就先学requests库….<br>今天雀儿八十什么都没干，下载了半天…</p>
+<p>然后又下载了下 <strong>pycharm</strong>，救了大命，根本不适合我用，纯英文…..可能明天再去b站看一下使用pycharm的详细使用教程<br><strong>flag：</strong>好好学英语<br>希望我暑假结束可以把这个弄懂吧…。姑且就先学requests库….<br>今天雀儿八十什么都没干，下载了半天…<br>明天学1h相关requests 然后看时间学学<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1aN411o7Ei">2021年最新Pycharm开发环境搭建 Pycharm学习有这个就够了 Python3.9+Pycharm2021.1_哔哩哔哩_bilibili</a>这个吧 要痛苦死了…..有时候在想为什么中国不能搞个自己的产品全部用中文，推广到国外在给他们使用英文呗？或者让他们也绝望下，全是中文！</p>
 
             </div>
             <hr>
