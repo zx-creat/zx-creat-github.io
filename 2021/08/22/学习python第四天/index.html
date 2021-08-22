@@ -146,7 +146,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      385 字
+      407 字
     </span>
   
 
@@ -197,7 +197,7 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># -*- coding:utf-8 -*-</span><br><span class="hljs-string">&quot;&quot;&quot;</span><br><span class="hljs-string">作者: zx</span><br><span class="hljs-string">日期：2021年08月22日</span><br><span class="hljs-string">&quot;&quot;&quot;</span><br><br><span class="hljs-keyword">import</span> requests<br><span class="hljs-keyword">import</span> re<br><br>sess = requests.Session()<br><br>url = <span class="hljs-string">&quot;https://ctf.x10sec.org/web2/&quot;</span><br>response = sess.get(url).text<br>calc = <span class="hljs-built_in">eval</span>(re.findall(<span class="hljs-string">r&#x27;16px;&quot;&gt;(.*?)=&#x27;</span>, response)[<span class="hljs-number">0</span>].strip())<br><span class="hljs-built_in">print</span>(calc)<br>data = &#123;<br>    <span class="hljs-string">&quot;pass_key&quot;</span>: calc<br>&#125;<br>flag = sess.post(url,data=data)<br><span class="hljs-built_in">print</span>(flag.text)<br><br></code></pre></td></tr></table></figure>
 
 <p>接着直接找flag就行！<br>打会王者去！太累了，学习新东西。</p>
-<p>今天就算是最后一天吧，好像接下来就需要做题再来了解python在ctf中解题的方法了。</p>
+<p>今天就算是最后一天吧，好像接下来就需要做题再来了解python在ctf中解题的方法了。接下来的几天就总结下 自己所学的漏洞的相关知识！</p>
 
             </div>
             <hr>
