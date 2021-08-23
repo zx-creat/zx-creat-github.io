@@ -18,7 +18,7 @@
   <meta name="author" content="木习习">
   <meta name="keywords" content="">
   
-  <title>学习python第四天 - 我的女孩</title>
+  <title>复习文件上传 - 我的女孩</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
@@ -124,7 +124,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="学习python第四天">
+            <span class="h2" id="subtitle" title="复习文件上传">
               
             </span>
 
@@ -134,8 +134,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-08-22 15:38" pubdate>
-        2021年8月22日 下午
+      <time datetime="2021-08-23 12:03" pubdate>
+        2021年8月23日 中午
       </time>
     </span>
   
@@ -146,7 +146,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      407 字
+      1.3k 字
     </span>
   
 
@@ -156,7 +156,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      5
+      15
        分钟
     </span>
   
@@ -186,18 +186,71 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">学习python第四天</h1>
+            <h1 style="display: none">复习文件上传</h1>
             
             <div class="markdown-body">
-              <script src="\assets\js\APlayer.min.js"> </script><h1 id="Python学习记录"><a href="#Python学习记录" class="headerlink" title="Python学习记录"></a>Python学习记录</h1><h2 id="Day4："><a href="#Day4：" class="headerlink" title="Day4："></a>Day4：</h2><h3 id="学习Pycharm的使用方法"><a href="#学习Pycharm的使用方法" class="headerlink" title="学习Pycharm的使用方法"></a>学习Pycharm的使用方法</h3><p>又是一上午吧…现在是11.41，收获感满满，以后学python的时候就不会为安装而发愁了。嘿嘿！<br>在花十几分钟看一下，一道需要python的ctf题。然后吃饭去了。</p>
-<h3 id="计算动态算式并post提交的题型"><a href="#计算动态算式并post提交的题型" class="headerlink" title="计算动态算式并post提交的题型"></a>计算动态算式并post提交的题型</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> requests<br><span class="hljs-keyword">import</span> re<br><br>sess = requests.Session()<br><br>url = <span class="hljs-string">&quot;&quot;</span><br>response = sess.get(url).text<br><span class="hljs-comment"># calc = re.search(r&#x27;&lt;br/&gt;(.*?)&lt;/p&gt;&#x27;,response,re.S)</span><br><span class="hljs-comment"># calc = re.findall(r&#x27;&lt;br/&gt;(.*?)&lt;/p&gt;&#x27;,response,re.S)[0] </span><br><span class="hljs-comment"># calc = re.findall(r&#x27;&lt;br/&gt;(.*?)&lt;/p&gt;&#x27;,response,re.S)[0].strip() 去掉前后空格</span><br><span class="hljs-comment"># calc = eval(re.findall(r&#x27;&lt;br/&gt;(.*?)&lt;/p&gt;&#x27;,response,re.S)[0].strip()) </span><br><span class="hljs-built_in">print</span>(calc)<br>data = &#123;<br>	<span class="hljs-string">&quot;result&quot;</span> : calc<br>&#125;<br>flag = sess.post(url,data=data)<br><span class="hljs-built_in">print</span>(flag.text)<br></code></pre></td></tr></table></figure>
+              <script src="\assets\js\APlayer.min.js"> </script><h1 id="复习笔记之文件上传"><a href="#复习笔记之文件上传" class="headerlink" title="复习笔记之文件上传"></a>复习笔记之文件上传</h1><img src="/2021/08/23/%E5%A4%8D%E4%B9%A0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/WEB%E6%BC%8F%E6%B4%9E-%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0.png" srcset="/img/loading.gif" lazyload class="" title="WEB漏洞-文件上传">
 
-<p>大部分理解吧….感觉还是要好好看看python的爬虫.<br>这是一个b站上的类型题。然后网络上搜索到了一个类似的题目。</p>
-<h3 id="X10Sec安全团队-简单计算题"><a href="#X10Sec安全团队-简单计算题" class="headerlink" title="X10Sec安全团队-简单计算题"></a><a target="_blank" rel="noopener" href="https://oj.x10sec.org/">X10Sec安全团队</a>-简单计算题</h3><p>直接上脚本!用pycharm写的，学了一早上的pycharm，这不就效果来了？</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># -*- coding:utf-8 -*-</span><br><span class="hljs-string">&quot;&quot;&quot;</span><br><span class="hljs-string">作者: zx</span><br><span class="hljs-string">日期：2021年08月22日</span><br><span class="hljs-string">&quot;&quot;&quot;</span><br><br><span class="hljs-keyword">import</span> requests<br><span class="hljs-keyword">import</span> re<br><br>sess = requests.Session()<br><br>url = <span class="hljs-string">&quot;https://ctf.x10sec.org/web2/&quot;</span><br>response = sess.get(url).text<br>calc = <span class="hljs-built_in">eval</span>(re.findall(<span class="hljs-string">r&#x27;16px;&quot;&gt;(.*?)=&#x27;</span>, response)[<span class="hljs-number">0</span>].strip())<br><span class="hljs-built_in">print</span>(calc)<br>data = &#123;<br>    <span class="hljs-string">&quot;pass_key&quot;</span>: calc<br>&#125;<br>flag = sess.post(url,data=data)<br><span class="hljs-built_in">print</span>(flag.text)<br><br></code></pre></td></tr></table></figure>
+<h2 id="什么是文件上传漏洞？"><a href="#什么是文件上传漏洞？" class="headerlink" title="什么是文件上传漏洞？"></a>什么是文件上传漏洞？</h2><p>凡是存在文件上传的地方它均有可能存在文件上传漏洞，关于上传文件操作的时候对方代码写的是否完整、是否安全，一旦疏忽了某个地方可能会造成文件上传漏洞。</p>
+<h2 id="文件上传漏洞由哪些危害？"><a href="#文件上传漏洞由哪些危害？" class="headerlink" title="文件上传漏洞由哪些危害？"></a>文件上传漏洞由哪些危害？</h2><p>文件可以自定义，可以成为webshell，通过文件上传来上传网站后门，直接获取网站权限，属于高危漏洞。</p>
+<h2 id="文件上传漏洞如何查找及判断？"><a href="#文件上传漏洞如何查找及判断？" class="headerlink" title="文件上传漏洞如何查找及判断？"></a>文件上传漏洞如何查找及判断？</h2><p>1.黑盒查找。文件后台、会员中心、文件扫描。</p>
+<p>2.白盒查找。通过代码分析到上传漏洞、查找文件上传功能。</p>
+<h2 id="文件上传漏洞有哪些需要注意的地方？"><a href="#文件上传漏洞有哪些需要注意的地方？" class="headerlink" title="文件上传漏洞有哪些需要注意的地方？"></a>文件上传漏洞有哪些需要注意的地方？</h2><p>对文件上传类型进行区分，是属于编辑器文件上传，还是属于第三方应用，还是会员中心。要确保文件上传是什么类型，就用什么类型方法对它进行后期测试。</p>
+<img src="/2021/08/23/%E5%A4%8D%E4%B9%A0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/%E5%88%A9%E7%94%A8%E6%80%9D%E8%B7%AF.png" srcset="/img/loading.gif" lazyload class="" title="利用思路">
 
-<p>接着直接找flag就行！<br>打会王者去！太累了，学习新东西。</p>
-<p>今天就算是最后一天吧，好像接下来就需要做题再来了解python在ctf中解题的方法了。接下来的几天就总结下 自己所学的漏洞的相关知识！</p>
+<p>不要妄想通过一个图片你能带着你的后门来控制网站。<strong>什么格式代码就用什么格式去执行。</strong></p>
+<h2 id="上传过程一些小问题"><a href="#上传过程一些小问题" class="headerlink" title="上传过程一些小问题"></a>上传过程一些小问题</h2><p>PHP称为后端语言是因为它的代码和你前端执行源代码是不同的。</p>
+<p>前端：代码直接在浏览器上执行。(不安全)</p>
+<p>也就是说当你看到网页出现提示框，禁止传入什么什么文件。可以使用F12，禁用javascript.</p>
+<p>后端：发送到对方服务器脚本里面，脚本在去验证去判断。</p>
+<p>前端代码过滤，删除这段代码</p>
+<h2 id="黑白名单绕过"><a href="#黑白名单绕过" class="headerlink" title="黑白名单绕过"></a>黑白名单绕过</h2><p><strong>黑名单</strong>：明确不允许上传的格式后缀</p>
+<p>asp php jsp aspx cgi war…</p>
+<p>如果php3 phtml..没有定义到后名单里，可以用这格式绕过限制</p>
+<p><strong>白名单：</strong>明确可以上传的格式后缀</p>
+<p>jpg png zip rar gif …</p>
+<p>定要白名单验证要更安全</p>
+<h2 id="常见使用方法"><a href="#常见使用方法" class="headerlink" title="常见使用方法"></a>常见使用方法</h2><p><strong>1、</strong>修改mime的值。<br><strong>2、</strong>使用php5 php3 phtml等绕过。<br><strong>3、</strong>.htaccess解析漏洞<br>意思就是说，如果碰到了包含shana的文件名，就以下面的格式去解析执行（也就是php）。</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs php">&lt;FilesMatch <span class="hljs-string">&quot;shana&quot;</span>&gt;<br>Sethandler application/x-httpd-php<br>&lt;/Filesmatch &gt;<br></code></pre></td></tr></table></figure>
+
+<p>这个满足点 需要能够上传此文件类型，且htaccess文件是Apache服务器中的一个配置文件，需要观察网页服务器是否是Apache。</p>
+<p>在Apache低版本中也存在如下解析漏洞。</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs stylus">x<span class="hljs-selector-class">.php</span><span class="hljs-selector-class">.xxx</span>.yyy<br>识别最后的yyy，如果不识别的就向前解析，直到识别<br></code></pre></td></tr></table></figure>
+
+<p><strong>4、</strong>在文件名加上空格。<br><strong>5、</strong>在文件名末尾加 .<br><strong>6、</strong>::$DATA（通俗易懂解释：”phpinfo.php::$DATA”Windows会自动去掉末尾的::$DATA变成”phpinfo.php”）<br><strong>7、****过滤的两种情况：</strong><br>①单次过滤<br>将a.php————&gt;a.<br>绕过：a.pphphp———–&gt;匹配第一个php—————-&gt;过滤后卫a.php<br>test11.php. . ———-&gt;去除空格test111.php..————-&gt;去除末位的点—————-&gt;test11.php.———-&gt;操作系统默认test11.php</p>
+<p>②循环过滤 递归过滤a.pphphp -&gt; a.<br><strong>8、</strong>%00（地址）截断，0x00（文件命名）截断<br><strong>%00：</strong>地址方面<br> get会自动解码 %00<br>post不会接吗 %00 -&gt; url编码</p>
+<p><strong>0x00（文件命名）截断</strong>：</p>
+<p>如下例子:</p>
+<img src="/2021/08/23/%E5%A4%8D%E4%B9%A0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/%E6%88%AA%E6%96%AD.png" srcset="/img/loading.gif" lazyload class="" title="截断">
+
+<p>使用Burp工具拦截进行修改，实现0x00截断，上面+其实相当于空格，0x2b修改为0x00</p>
+<img src="/2021/08/23/%E5%A4%8D%E4%B9%A0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/%E6%88%AA%E6%96%AD2.png" srcset="/img/loading.gif" lazyload class="" title="截断2">
+
+<p>最后结果</p>
+<img src="/2021/08/23/%E5%A4%8D%E4%B9%A0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/%E6%88%AA%E6%96%AD3.png" srcset="/img/loading.gif" lazyload class="" title="截断3">
+
+<p><strong>9、</strong>可以命名.php/.</p>
+<h2 id="upload-labs的14"><a href="#upload-labs的14" class="headerlink" title="upload-labs的14"></a>upload-labs的14</h2><p><strong>制作包含一句话木马的图片：</strong></p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs stylus">copy <span class="hljs-number">1</span><span class="hljs-selector-class">.jpg</span> /<span class="hljs-selector-tag">b</span> + shell<span class="hljs-selector-class">.php</span> /<span class="hljs-selector-tag">a</span> webshell.jpg<br></code></pre></td></tr></table></figure>
+
+<p>也可以直接记事本打开图片末尾加上</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-meta">&lt;?php</span> @<span class="hljs-keyword">eval</span>(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">&#x27;cmd&#x27;</span>]);<span class="hljs-meta">?&gt;</span><br></code></pre></td></tr></table></figure>
+
+<p>此关卡因为有文件包含漏洞，能够将图片解析成php执行其中代码。</p>
+<h2 id="upload-labs的18"><a href="#upload-labs的18" class="headerlink" title="upload-labs的18"></a>upload-labs的18</h2><p>1、存在二次渲染的逻辑漏洞，第一次上传时候没有验证就直接上传了。<br><strong>二次渲染：</strong>这里就说说jpg的渲染，png渲染跟jpg渲染截然不同，也相当复杂。<br><strong>jpg的二次渲染：</strong>主要是查看上传的图片中php代码是否被过滤，使用16进制软件，打开对比前后两个图片，没有被二次渲染影响的部分。</p>
+<p>这里也附上二次渲染png的网页：<a target="_blank" rel="noopener" href="https://xz.aliyun.com/t/2657">upload-labs之pass 16详细分析 - 先知社区 (aliyun.com)</a></p>
+<p>2、条件竞争，资源竞争就是说比如我们现在打开一个文档正在编辑，然后现在删除，操作系统会提示无法删除。因为资源正在被占用。</p>
+<p>我们可以在上传webshell.jpg的时候，不断地对它进行访问，然后下面的rename（）函数就无法成功执行。</p>
+<p>使用bp的intruder模块，不断地发包，然后在另外的浏览器请求对应的文件。（同时进行）</p>
+<h2 id="upload-labs的20"><a href="#upload-labs的20" class="headerlink" title="upload-labs的20"></a>upload-labs的20</h2><p>长话短说，主要是知道方法。<br>有数组来最终确定上传的文件名。</p>
+<img src="/2021/08/23/%E5%A4%8D%E4%B9%A0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/%E6%95%B0%E7%BB%84.png" srcset="/img/loading.gif" lazyload class="" title="数组">
+
+<p><strong>save_name[0]=’aaaaa.php/‘</strong></p>
+<p><strong>save_name[1]=’’</strong></p>
+<p><strong>save_name[2]=’jpg’</strong></p>
+<p><strong>所以file={‘aaaaa.php/‘,’’,’jpg’}———–&gt;经过源码中的拼接aaaaa.php/.jpg</strong></p>
+<h2 id="绕过WAF"><a href="#绕过WAF" class="headerlink" title="绕过WAF"></a>绕过WAF</h2><p>以下操作均在bp抓包后中的Content-Disposition：执行</p>
+<p>1、数据溢出<br>2、符号变异-防匹配(‘ “ ;)：给文件名添加 如”x”.php<br>3、数据截断-防匹配(换行)<br>4、当然你也可以采用延时爆破法 有waf了 这种情况我觉得实现程度不大。<br>fuzz及爆破字典：<a target="_blank" rel="noopener" href="https://github.com/Ivan52/fuzz_dict">https://github.com/Ivan52/fuzz_dict</a></p>
 
             </div>
             <hr>
@@ -212,18 +265,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/08/23/%E5%A4%8D%E4%B9%A0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">复习文件上传</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2021/08/21/%E5%AD%A6%E4%B9%A0python%E7%AC%AC%E4%B8%89%E5%A4%A9/">
-                        <span class="hidden-mobile">python学习第三天</span>
+                      <a href="/2021/08/22/%E5%AD%A6%E4%B9%A0python%E7%AC%AC%E5%9B%9B%E5%A4%A9/">
+                        <span class="hidden-mobile">学习python第四天</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
